@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/favicon.png">
-	<link rel="stylesheet" href="css/html5reset.css">
-	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+	<link rel="stylesheet" href="css/styles.css">
 	<title>Minghan Personal Website</title>
 </head>
 
@@ -14,67 +14,83 @@
 	<header>
 		<nav>
 			<ul>
-				<li class="active"><a href="index.html">Home</a></li>
-                <li class="active"><a href="twitch.html">Twitch+</a></li>
-                <li class="active"><a href="starlink.html">Starlink</a></li>
-                <li class="active"><a href="tinnews.html">Tinnews</a></li>
+				<li><a href="index.html" class="active">Home</a></li>
+                <li><a href="twitch.html">Twitch+</a></li>
+                <li><a href="starlink.html">Starlink</a></li>
+                <li><a href="tinnews.html">Tinnews</a></li>
 			</ul>
 		</nav>
+		<a class="skip" href="#content">Skip to content</a>
 	</header>
 
 	<main>
-		<h1>Minghan Li</h1>
-		<h2></h2>
-		<p>
-			This is the homepage of my personal website where I will show my education background, skills, industrial and project experience.
-		</p>
-        <p>
+		<h1 id="content">Minghan Li</h1>
+        <h2>
             About Me
-        </p>
-        <figure>
-			<img src="images/Photo.JPG" alt="Minghan's Photo" width="500"/>
-			<figcaption>Minghan's Photo</figcaption>
-		</figure>
-        <p>
+		</h2>
+		<br>
+		<p>
+			Hi, my name is Minghan, currently a graduate student at University of Michigan - Ann Arbor majoring in Electrical & Computer Engineering and Information. 
+			I have rich experience and passionate about Web Development (Frontend and Backend), Android Application Development, Big Data Analytics and Machine Learning.
+			My interests also lie in Entrepreneurship and Stock/Crypto Trading.
+			<br>
+			I love basketball, running, traveling and I really enjoy spending time with my friends when I am free. 
+			<br>
+			I am expected to graduate in May, 2023 and looking forward to starting my new journey as a software engineer.
+			<br>
+			Go blue!
+		</p>
+		<div class="img-minghan"><img src="images/Photo.JPG" alt="Minghan's Photo"/></div>
+        <h2>
             Education Background
-        </p>
-        <figure>
-			<img src="images/UMStadium.jpg" alt="" width="500"/>
-			<figcaption>UMStadium</figcaption>
-		</figure>
-		<figure>
-			<img src="images/ECE.png" alt="" width="500"/>
-			<figcaption>ECE</figcaption>
-		</figure>
-		<figure>
-			<img src="images/UMSI.png" alt="" width="500"/>
-			<figcaption>UMSI</figcaption>
-		</figure> 
-        <p>
+		</h2>
+		<div class="img-stadium"><img src="images/UMStadium.jpg" alt="UMStadium"/></div>
+		<h3>
+			Master of Science in Electrical and Computer Engineering
+		</h3>
+		<p>
+			- Focus on Network, Communication and Information Systems
+		</p>
+		<div class="img-ece"><img src="images/ECE.png" alt="ECE"/></div>
+		<h3>
+			Master of Science in Information
+		</h3>
+		<p>
+			- Focus on Big Data Analytics
+		</p>
+		<div class="img-umsi"><img src="images/UMSI.png" alt="UMSI"/></div>
+        <h2>
             Skills
-        </p>
-        <p>
+		</h2>
+		<ul class="skill">
+			<li>Programming Languages: Java, Python, C/C++, Julia, JavaScript, SQL, R, MATLAB</li>
+			<li>Framework and Platforms: React, Node.js, Spring, Django, Flask, Android, iOS, AWS EC2</li>
+			<li>Databases and Tools: MySQL, MongoDB, Apache Tomcat, Git, Linux, Docker</li>
+		</ul>
+        <h2>
             Industrial Experience
-        </p>
-        <figure>
-			<img src="images/Uber-Logo.png" alt="Uber" width="500"/>
-			<figcaption>Uber</figcaption>
-		</figure>
-        <p>
+		</h2>
+		<h3>
+			Software Engineer Intern
+		</h3>
+		<h4>
+			Uber - Full-time
+		</h4>
+		<div class="img-uber"><img src="images/Uber-Logo.png" alt="Uber" width="500"/></div>
+		<p>
+			Jun 2022 - Aug 2022 · 3 mos
+			<br>
+			Sunnyvale, California, United States
+		</p>
+		<p>
+			Risk Product Engineering - Fighting fraud on uber platform
+		</p>
+        <h2>
             Project Experience
-        </p>
-        <figure>
-			<img src="images/Twitch.jpg" alt="Twitch" width="500"/>
-			<figcaption>Twitch</figcaption>
-		</figure>
-        <figure>
-			<img src="images/Starlink.png" alt="Starlink" width="500"/>
-			<figcaption>Starlink</figcaption>
-		</figure>
-        <figure>
-			<img src="images/Android.png" alt="Android" width="500"/>
-			<figcaption>Android</figcaption>
-		</figure>
+		</h2>
+		<div class="img-twitch"><img src="images/Twitch.jpg" alt="Twitch" width="500"/></div>
+		<div class="img-starlink"><img src="images/Starlink.png" alt="Starlink" width="500"/></div>
+		<div class="img-android"><img src="images/Android.png" alt="Android" width="500"/></div>
 	</main>
 
 	<footer>

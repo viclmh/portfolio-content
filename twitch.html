@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/favicon.png">
-	<link rel="stylesheet" href="css/html5reset.css">
-	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+	<link rel="stylesheet" href="css/styles.css">
 	<title>Minghan Personal Website</title>
 </head>
 
@@ -14,23 +14,38 @@
 	<header>
 		<nav>
 			<ul>
-				<li class="active"><a href="index.html">Home</a></li>
-                <li class="active"><a href="twitch.html">Twitch+</a></li>
-                <li class="active"><a href="starlink.html">Starlink</a></li>
-                <li class="active"><a href="tinnews.html">Tinnews</a></li>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="twitch.html" class="active">Twitch+</a></li>
+                <li><a href="starlink.html">Starlink</a></li>
+                <li><a href="tinnews.html">Tinnews</a></li>
 			</ul>
 		</nav>
+		<a class="skip" href="#content">Skip to content</a>
 	</header>
 
 	<main>
-		<h1>Twitch+: A Personalized Twitch Resources Recommendation Engine</h1>
-		<h2></h2>
-		<p>
-            This will be the summary of my backend project: A Twitch+ Recommendation System.
-		</p>
-        <p>
-            Designed and built a full-stack web application for users to search twitch resources (stream/video/clip) and get recommendations.
-        </p>
+		<h1 id="content">Twitch+: A Personalized Twitch Resources Recommendation Engine</h1>
+        <div>
+			<p>
+				Designed and built a full-stack web application for users to search twitch resources (stream/video/clip) and get recommendations.
+				<br>
+				<br>
+				Built a web page with rich+ user friendly experience using React and Ant Design.
+				<br>
+				<br>
+				Implemented RESTful APIs using Java servlets, retrieved real Twitch resources using Twitch API and stored data in MySQL.
+				<br>
+				<br>
+				Support login/logout and favorite collection.
+				<br>
+				<br>
+				Explored multiple recommendation algorithms and extracted game information from Twitch resources to implement a Content-based algorithm.
+				<br>
+				<br>
+				Deployed the service to AWS EC2 for better stability.
+			</p>
+		</div>
+
         <figure>
 			<img src="images/Twitch-page.png" alt="Twitch+" width="500"/>
 			<figcaption>Twitch+</figcaption>

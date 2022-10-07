@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/favicon.png">
-	<link rel="stylesheet" href="css/html5reset.css">
-	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+	<link rel="stylesheet" href="css/styles.css">
 	<title>Minghan Personal Website</title>
 </head>
 
@@ -14,27 +14,29 @@
 	<header>
 		<nav>
 			<ul>
-				<li class="active"><a href="index.html">Home</a></li>
-                <li class="active"><a href="twitch.html">Twitch+</a></li>
-                <li class="active"><a href="starlink.html">Starlink</a></li>
-                <li class="active"><a href="tinnews.html">Tinnews</a></li>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="twitch.html">Twitch+</a></li>
+                <li><a href="starlink.html" class="active">Starlink</a></li>
+                <li><a href="tinnews.html">Tinnews</a></li>
 			</ul>
 		</nav>
+		<a class="skip" href="#content">Skip to content</a>
 	</header>
 
 	<main>
-		<h1>Starlink: React JS based Starlink Trajectory Visualization</h1>
-		<h2></h2>
+		<h1 id="content">Starlink: React JS based Starlink Trajectory Visualization</h1>
 		<p>
-            This will be the summary of my front-end project: A Starlink tracker.
+			Designed and developed a visualization dashboard using ReactJS and D3 to track satellites in real-time based on Geolocation.
+			<br>
+			<br>
+			Built location, altitude, and duration based selector to refine satellite search.			<br>
+			<br>
+			Animated selected satellite paths on a world map using D3 to improve the user-friendliness.
+			<br>
+			<br>
+			Deployed the dashboard to AWS for demonstration..
 		</p>
-        <p>
-            Designed and developed a visualization dashboard using ReactJS and D3 to track satellites in real-time based on Geolocation.
-        </p>
-        <figure>
-			<img src="images/Starlink-tracker.png" alt="Starlink" width="500"/>
-			<figcaption>Starlink Tracker</figcaption>
-		</figure>
+		<div class="img-star"><img src="images/Starlink-tracker.png" alt="Starlink"/></div>
 	</main>
 
 	<footer>

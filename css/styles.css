@@ -74,7 +74,7 @@ h1 {
   }
   to {
     opacity: 1;
-    margin-left: 0%;
+    /* margin-left: 0%; */
     width: 100%;
   }
 }
@@ -86,7 +86,7 @@ h1, #img-minghan{
 }
 
 @media (prefers-reduced-motion: reduce) {
-  h1, .img-minghan{
+  h1, #img-minghan{
     animation: none;
   }
 }
@@ -187,6 +187,7 @@ footer {
 
   #img-minghan{
     order: 1;
+    animation: none;
   }
 
   #img-si{

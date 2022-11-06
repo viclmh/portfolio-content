@@ -1,5 +1,22 @@
-body {margin: 0px;}
+body{
+  display: grid;
+  margin: 0px;
+  background-image: linear-gradient(to right, rgba(255,255,255, 0.8) 0 100%), url("../images/UMStadium.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  grid-template-rows: 70px auto 70px 70px;
+  /* grid-template-columns: auto 900px auto; */
+  align-content: center;
+}
 
+header{
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  grid-column: 1 / -1;
+}
 
 nav ul {
   list-style-type: none;
@@ -34,9 +51,44 @@ nav .active {
   /* color: #ffcb0b; */
 }
 
+main {
+  grid-row-start: 2;
+  grid-row-end: span 1;
+  /* grid-column: 2 / span 1; */
+  padding: 20px;
+}
+
 
 h1 {
-    padding: 10px;
+  padding: 10px;
+  font-family: 'EB Garamond', serif;
+  font-size: 3em;
+}
+
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+h1, #img-minghan{
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  h1, .img-minghan{
+    animation: none;
+  }
 }
 
 .skip {
@@ -46,6 +98,7 @@ h1 {
 ul {
   list-style: square;
 }
+
 
 img {
   border-style: none;
@@ -59,47 +112,104 @@ img:hover {
 box-shadow: 3px 3px 3px #1E90FF;
 }
 
-.img-minghan img{
+
+.gallery{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+#img-minghan{
   width: 600px;
+  height: 450px;
 }
 
-.img-stadium img{
-  width: 1000px;
-}
-
-.img-ece img{
+/* #img-ece{
   width: 450px;
-}
+} */
 
-.img-umsi img{
+/* #img-umsi{
   width: 600px;
   height: 55px;
+} */
+
+#img-si{
+  width: 550px;
+  height: 52px;
 }
 
-.img-uber img{
-  width: 300px;
+#img-ece{
+  width: 420px;
+  height: 85px;
 }
 
-.img-twitch img, .img-starlink img{
-  width: 500px;
+
+#img-uber, #img-twitch, #img-starlink, #img-android{
+  width: 600px;
+  height: 450px;
 }
 
-.img-android img{
-  width: 500px;
-  height: 400px;
-}
 
-.img-android img{
-  width: 500px;
-  height: 400px;
-}
-
-.img-tinnews img{
+#img-tinnews{
   width: 400px;
   height: 800px;
 }
 
-.img-star img{
+#img-star{
   width: 1000px;
   height: 550px;
+}
+
+#LinkedIn{
+  color: #0A66C2;
+}
+
+aside{
+  grid-row: 3 / span 1;
+  /* grid-column: 2 / span 1; */
+}
+
+footer {
+  grid-row-start: 4;
+  grid-row-end: span 1;
+  /* grid-column: 1 / -1; */
+}
+
+
+@media screen and (min-width: 700px) {
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #img-minghan{
+    order: 1;
+  }
+
+  #img-si{
+    order: 2;
+  }
+  
+  #img-ece{
+    order: 2;
+  }
+
+  #img-uber{
+    order: 3;
+  }
+
+  #img-twitch{
+    order: 4;
+  }
+
+  #img-starlink{
+    order: 5;
+  }
+
+  #img-android{
+    order: 6;
+  }
 }

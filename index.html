@@ -7,6 +7,8 @@
 	<link rel="icon" href="images/favicon.png">
 	<!-- <link rel="stylesheet" href="css/html5reset.css"> -->
 	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Fira+Sans&family=Slabo+27px&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/08204cda0b.js" crossorigin="anonymous"></script>
 	<title>Minghan Personal Website</title>
 </head>
 
@@ -24,76 +26,112 @@
 	</header>
 
 	<main>
-		<h1 id="content">Minghan Li</h1>
-        <h2>
-            About Me
-		</h2>
-		<br>
-		<p>
-			Hi, my name is Minghan, currently a graduate student at University of Michigan - Ann Arbor majoring in Electrical & Computer Engineering and Information. 
-			I have rich experience and passionate about Web Development (Frontend and Backend), Android Application Development, Big Data Analytics and Machine Learning.
-			My interests also lie in Entrepreneurship and Stock/Crypto Trading.
+		<div class="about">
+			<h1 id="content">Minghan Li</h1>
+			<h2>
+				About Me
+			</h2>
 			<br>
-			I love basketball, running, traveling and I really enjoy spending time with my friends when I am free. 
-			<br>
-			I am expected to graduate in May, 2023 and looking forward to starting my new journey as a software engineer.
-			<br>
-			Go blue!
-		</p>
-		<div class="img-minghan"><img src="images/Photo.JPG" alt="Minghan's Photo"/></div>
-        <h2>
-            Education Background
-		</h2>
-		<div class="img-stadium"><img src="images/UMStadium.jpg" alt="UMStadium"/></div>
-		<h3>
-			Master of Science in Electrical and Computer Engineering
-		</h3>
-		<p>
-			- Focus on Network, Communication and Information Systems
-		</p>
-		<div class="img-ece"><img src="images/ECE.png" alt="ECE"/></div>
-		<h3>
-			Master of Science in Information
-		</h3>
-		<p>
-			- Focus on Big Data Analytics
-		</p>
-		<div class="img-umsi"><img src="images/UMSI.png" alt="UMSI"/></div>
-        <h2>
-            Skills
-		</h2>
-		<ul class="skill">
-			<li>Programming Languages: Java, Python, C/C++, Julia, JavaScript, SQL, R, MATLAB</li>
-			<li>Framework and Platforms: React, Node.js, Spring, Django, Flask, Android, iOS, AWS EC2</li>
-			<li>Databases and Tools: MySQL, MongoDB, Apache Tomcat, Git, Linux, Docker</li>
-		</ul>
-        <h2>
-            Industrial Experience
-		</h2>
-		<h3>
-			Software Engineer Intern
-		</h3>
-		<h4>
-			Uber - Full-time
-		</h4>
-		<div class="img-uber"><img src="images/Uber-Logo.png" alt="Uber" width="500"/></div>
-		<p>
-			Jun 2022 - Aug 2022 · 3 mos
-			<br>
-			Sunnyvale, California, United States
-		</p>
-		<p>
-			Risk Product Engineering - Fighting fraud on uber platform
-		</p>
-        <h2>
-            Project Experience
-		</h2>
-		<div class="img-twitch"><img src="images/Twitch.jpg" alt="Twitch" width="500"/></div>
+			<p>
+				Hi, my name is Minghan, currently a graduate student at University of Michigan - Ann Arbor majoring in Electrical & Computer Engineering and Information. 
+				I have rich experience and passionate about Web Development (Frontend and Backend), Android Application Development, Big Data Analytics and Machine Learning.
+				My interests also lie in Entrepreneurship and Stock/Crypto Trading.
+				<br>
+				I love basketball, running, traveling and I really enjoy spending time with my friends when I am free. 
+				<br>
+				I am expected to graduate in May, 2023 and looking forward to starting my new journey as a software engineer.
+				<br>
+				Go blue!
+			</p>
+		</div>
+		<!-- <div class="img-minghan"><img src="images/Photo.JPG" alt="Minghan's Photo"/></div> -->
+
+
+		<div class="edu">
+			<h2>
+				Education Background
+			</h2>
+	
+			<h3>
+				Master of Science in Electrical and Computer Engineering
+			</h3>
+			<p>
+				- Focus on Network, Communication and Information Systems
+			</p>
+			<!-- <div class="img-ece"><img src="images/ECE.png" alt="ECE"/></div> -->
+			<h3>
+				Master of Science in Information
+			</h3>
+			<p>
+				- Focus on Big Data Analytics
+			</p>
+			<!-- <div class="img-umsi"><img src="images/UMSI.png" alt="UMSI"/></div> -->
+			
+		</div>
+		
+		<div class="skill">
+			<h2>
+				Skills
+			</h2>
+			<ul>
+				<li>Programming Languages: Java, Python, C/C++, Julia, JavaScript, SQL, R, MATLAB</li>
+				<li>Framework and Platforms: React, Node.js, Spring, Django, Flask, Android, iOS, AWS EC2</li>
+				<li>Databases and Tools: MySQL, MongoDB, Apache Tomcat, Git, Linux, Docker</li>
+			</ul>
+		</div>
+
+		<div class="industry">
+			<h2>
+				Industrial Experience
+			</h2>
+			<h3>
+				Software Engineer Intern
+			</h3>
+			<h4>
+				Uber - Full-time
+			</h4>
+			<!-- <div class="img-uber"><img src="images/Uber-Logo.png" alt="Uber" width="500"/></div> -->
+			<p>
+				Jun 2022 - Aug 2022 · 3 mos
+				<br>
+				Sunnyvale, California, United States
+			</p>
+			<p>
+				Risk Product Engineering - Fighting fraud on uber platform
+			</p>
+		</div>
+
+        <div class="project">
+			<h2>
+				Project Experience
+			</h2>
+		</div>
+        
+		<h2>Gallery</h2>
+        <div class="gallery">
+			<img id="img-minghan" src="images/Photo.JPG" alt="Minghan's Photo"/>
+			<img id="img-ece" src="images/ECE.png" alt="ECE"/>
+			<img id="img-si" src="images/UMSI.png" alt="UMSI"/>
+          	<img id="img-uber" src="images/Uber-Logo.png" alt="Uber" width="500"/>
+          	<img id="img-twitch" src="images/Twitch.jpg" alt="Twitch" width="500"/>
+          	<img id="img-starlink" src="images/Starlink.png" alt="Starlink" width="500"/>
+          	<img id="img-android" src="images/Android.png" alt="Android" width="500"/>
+        </div>
+		<!-- <div class="img-twitch"><img src="images/Twitch.jpg" alt="Twitch" width="500"/></div>
 		<div class="img-starlink"><img src="images/Starlink.png" alt="Starlink" width="500"/></div>
-		<div class="img-android"><img src="images/Android.png" alt="Android" width="500"/></div>
+		<div class="img-android"><img src="images/Android.png" alt="Android" width="500"/></div> -->
 	</main>
 
+	<aside>
+		These three projects cover full-stack web development, front-end web design and android application development.
+	</aside>
+	
 	<footer>
+		<div>
+			<a href="https://www.linkedin.com/in/minghan-l-84b089202/" id="LinkedIn">
+				<i id="linkedin" class="fa-brands fa-linkedin"></i>
+			</a>
+		</div>
 		&copy; 2022 Minghan Li Personal Website. All rights reserved.
 	</footer>
 </body>

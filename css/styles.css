@@ -183,7 +183,7 @@ footer {
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) and (min-height: 760px){
 
   .gallery {
     display: flex;
@@ -220,4 +220,5 @@ footer {
   #img-android {
     order: 6;
   }
+
 }

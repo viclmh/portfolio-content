@@ -1,7 +1,6 @@
 body {
   display: grid;
   margin: 0px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0 100%), url("../images/UMStadium.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,6 +9,9 @@ body {
   grid-template-rows: 70px auto 70px 70px;
   /* grid-template-columns: auto 900px auto; */
   align-content: center;
+  /* background-image: url("../images/test.png");
+  background-color: #ffffff; */
+  background: url("../images/Stadium.png") #ffffff;
 }
 
 header {
@@ -23,8 +25,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(0, 50, 106, 0.80);
-
+  background-color: #00326acc;
   top: 0;
   width: 100%;
 }
@@ -35,7 +36,7 @@ nav li {
 
 nav li a {
   display: block;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -113,7 +114,7 @@ img {
 }
 
 img:hover {
-  box-shadow: 3px 3px 3px #1E90FF;
+  box-shadow: 3px 3px 3px #004F9E;
 }
 
 
